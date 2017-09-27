@@ -4,7 +4,7 @@
 #include "common.h"
 #define LEN 100
 struct entrepot{
-	char para;//参数
+	char para[1024];//参数
 	int  data;//参数的值
 };
 struct entrepot Entr[LEN]; 
