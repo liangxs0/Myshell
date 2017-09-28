@@ -10,7 +10,7 @@ int main(int argc,char** argv)
 		fprintf(stderr,"flag error %s\n",strerror(errno));
 		return -1;	
 	}else if(jmp == 0){
-		printf(" 退出 myvim! %d\n",jmp);	
+		printf(" 返回main \n");	
 	}else if{	
 	}
 	while (1){
