@@ -88,10 +88,10 @@ void myvim()
 		offset = offset + 1;
 		strcpy(buffer1[offset],c);
 		//printf("offset = %d,buffer1[offset] = %s\n",offset,buffer1[offset]);
-		len = strlen(buffer1[offset]);
 		//printf("len = %d\n",len);
 		ss = offset + 1;
 	}
+	len = strlen(buffer1[offset]);
 	buffer1[offset][len - 1] = '\0';
 	//printf("ss = %d\n",ss);
 
@@ -237,6 +237,7 @@ void myvim()
 		counter1 = 0;
 		t = 0;
 		ss = 0;
+		printf(" 退出myvim \n");
 		longjmp(jmp_env,1);//跳到main函数
 	}
 }
