@@ -1,0 +1,10 @@
+
+系统命令行实现
+myvim规则：
+	def		定义
+	set		赋值
+	add		加法
+	sub		减法
+	print	打印
+	exit	退出myvim
+			
