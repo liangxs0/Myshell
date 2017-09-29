@@ -217,8 +217,13 @@ void myvim()
 		counter1 = 0;
 		t = 0;
 		ss = 0;
+<<<<<<< HEAD
 		printf("已退出myvim\n");
 		longjmp(env,1);//跳到main函数
+=======
+		printf(" 退出myvim \n");
+		longjmp(jmp_env,1);//跳到main函数
+>>>>>>> 0793d85879fcf313cdb367544406692f5ae9aa8e
 	}
 }
 

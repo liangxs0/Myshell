@@ -11,6 +11,7 @@ extern  jmp_buf env;
 extern Program* prog;
 void ad()
 {
+<<<<<<< HEAD
 	int fd = open("./doc/ad.txt",O_RDONLY);
 		if(fd < 0){
 			fprintf(stderr,"Open ad.txt error%s\n",strerror(errno));
@@ -20,6 +21,16 @@ void ad()
 	while((l = read(fd,buf,4096)) > 0){
 		write(STDOUT_FILENO,buf,l);
 		memset(buf,0,sizeof(buf));
+=======
+	char buffer[1024];
+	int jmp = setjmp(jmp_env);
+	if(setjmp(jmp_env) < 0){
+		fprintf(stderr,"flag error %s\n",strerror(errno));
+		return -1;	
+	}else if(jmp == 0){
+		printf(" 返回main \n");	
+	}else if{	
+>>>>>>> 0793d85879fcf313cdb367544406692f5ae9aa8e
 	}
 }
 int main(int argc,char* argv)
